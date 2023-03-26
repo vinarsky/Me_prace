@@ -1,0 +1,18 @@
+INFO:root:Server started on <socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 65526)>
+INFO:root:New client on('127.0.0.1', 57066)
+INFO:root:Incoming message: bd
+INFO:root:Outgoing message: Invalid command!
+INFO:root:Incoming message: TRANSLATELOCL"water
+INFO:root:Outgoing message: TRANSLATEDSUC"voda"
+INFO:root:Incoming message: 
+INFO:root:Outgoing message: Invalid command!
+INFO:root:Server started on <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.0.209', 65526)>
+INFO:root:New client on('192.168.0.209', 59572)
+INFO:root:Incoming message: hgfds
+
+
+INFO:root:Outgoing message: Invalid command!
+INFO:root:Incoming message: TRANSLATELOCL"water
+INFO:root:Outgoing message: TRANSLATEDSUC"voda"
+INFO:root:Incoming message: 
+INFO:root:Outgoing message: Invalid command!

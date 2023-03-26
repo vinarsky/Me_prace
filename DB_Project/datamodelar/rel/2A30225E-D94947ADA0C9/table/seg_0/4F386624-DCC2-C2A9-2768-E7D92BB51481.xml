@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F386624-DCC2-C2A9-2768-E7D92BB51481" name="Zamestnanci">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>453F36B7-4C1B-B532-BE9F-94845D00E0F7</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Jmeno" id="E5174ED4-AEEC-CC23-574D-BE4391562391">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>107A006F-820D-CE01-85AF-1EE31E106C40</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prijmeni" id="5EDC1A9D-2804-FD56-3ED7-0C9D00B55881">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>00090E5D-D8DB-24EE-7411-6869891BA4DC</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="F3E03BBE-D0CF-36FA-E15B-5385B8CCDA10">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>E99DFABF-4D9F-07FE-DF2E-255EB2E14BFC</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tel" id="D8346D97-CEA0-977D-45FA-AAD7C3E83105">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>0D499F7E-38EB-60EC-A22D-DC946B6EE41F</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ulice" id="5B5381EB-73C6-79CB-FF26-084FA2BD98C5">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>E7EF548B-D52A-DDE2-817F-AE23CB18E147</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cislo_popisne" id="744A67F7-C7DE-3689-83B7-D2CFA97C7522">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>41CE7545-CA3B-A6BE-31D6-FF7B05037E28</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Datum_nastupu" id="1233BE5D-554A-61D1-3D76-1545F8D0C6EA">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>1298F56B-6134-D940-985B-C6505F984809</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zamestnanci_ID" id="12BC87D1-0DFB-4F1F-0608-103858D8DA63">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Mesto_Mesto_ID" id="9E9AAF23-65A1-8CFF-438C-389A07A74058">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="436A2ADA-8327-3AB2-3794-47DC81D06F9D" referredColumn="6B47350E-A334-2B79-7C4B-EE205C0F6BC1"/>
+</associations>
+</Column>
+<Column name="Pobocka_Pobocka_ID" id="37AE9A90-38AD-F26B-685E-4A8F79C6C283">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-28 19:55:33 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B04C1249-3773-7FD7-FB7B-9B04E141B4A6" referredColumn="5A1BC9C3-8A3E-031D-0D3C-D41EA3D977FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55C02D29-34D2-35C4-65E1-7FC06DA3567D" name="Zamestnanci_PK">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="12BC87D1-0DFB-4F1F-0608-103858D8DA63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05DF1258-FFCE-C6AA-D0A4-0409AA981F72" name="Zamestnanci_Mesto_FK">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>2FCA28ED-C3AE-13D2-61E8-A56647680AD8</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E9AAF23-65A1-8CFF-438C-389A07A74058"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82EDD56F-A7A0-019E-7794-79F127D011ED" name="Zamestnanci_Pobocka_FK">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-28 19:55:33 UTC</createdTime>
+<generatorID>CC746888-7E31-4C7C-4308-8B1316449D1E</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37AE9A90-38AD-F26B-685E-4A8F79C6C283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

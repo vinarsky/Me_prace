@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A16199B6-3CBE-CC12-CEC1-3FA3B7DE92EE" name="Uskladneno">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:50:37 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pocet kusu" id="4D1659F4-9F3B-4002-DA41-231BBDF7C5B5">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-28 20:15:40 UTC</createdTime>
+<generatorID>E5AF79D4-1E13-6058-B2F6-FFB5C6E257B0</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Uskladneno Produkt FK" directorySegmentName="seg_0" id="C3E022AB-53BC-49E6-2002-AA214A3342C1">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:50:47 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EDB94709-42C2-E74D-0E81-6134AF1B2E48</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A16199B6-3CBE-CC12-CEC1-3FA3B7DE92EE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

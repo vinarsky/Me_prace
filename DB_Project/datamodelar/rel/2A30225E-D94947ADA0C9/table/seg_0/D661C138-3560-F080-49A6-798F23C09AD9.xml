@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D661C138-3560-F080-49A6-798F23C09AD9" name="Uskladneno">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>A16199B6-3CBE-CC12-CEC1-3FA3B7DE92EE</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Produkt_Produkt_ID" id="21A7BFA3-E9D0-2669-D08F-711A65A998CD">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC59E4ED-B2E0-E08A-55B8-3B0226DD23A0" referredColumn="6CB91B7C-B902-4330-1D1E-C485E7B12EA4"/>
+</associations>
+</Column>
+<Column name="Pobocka_Pobocka_ID" id="6A6D1ACF-9F85-982D-21FB-F90B9D15CD5F">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1A6FC5E-4E29-F785-1F76-10BB38402D67" referredColumn="5A1BC9C3-8A3E-031D-0D3C-D41EA3D977FB"/>
+</associations>
+</Column>
+<Column name="pocet_kusu" id="E5AF79D4-1E13-6058-B2F6-FFB5C6E257B0">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-28 20:15:08 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5B506F7-14E1-2042-F45E-82CEB02BB07F" name="Uskladneno_Produkt_FK">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>C3E022AB-53BC-49E6-2002-AA214A3342C1</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21A7BFA3-E9D0-2669-D08F-711A65A998CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B8063E6-3225-BB8E-C481-CDE138A4F3AC" name="Uskladneno_Pobocka_FK">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>C08F9960-3253-24C5-931A-04A5F44B2F38</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A6D1ACF-9F85-982D-21FB-F90B9D15CD5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="453F36B7-4C1B-B532-BE9F-94845D00E0F7" name="Zamestnanci">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:10:06 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Jmeno" id="107A006F-820D-CE01-85AF-1EE31E106C40">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:25:29 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prijmeni" id="00090E5D-D8DB-24EE-7411-6869891BA4DC">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:25:52 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="E99DFABF-4D9F-07FE-DF2E-255EB2E14BFC">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:26:11 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tel" id="0D499F7E-38EB-60EC-A22D-DC946B6EE41F">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:26:29 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ulice" id="E7EF548B-D52A-DDE2-817F-AE23CB18E147">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:27:06 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cislo popisne" id="41CE7545-CA3B-A6BE-31D6-FF7B05037E28">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:27:27 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Datum nastupu" id="1298F56B-6134-D940-985B-C6505F984809">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:28:30 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

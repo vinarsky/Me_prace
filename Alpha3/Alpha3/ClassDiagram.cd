@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Alpha3.Customer">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Alpha3.Person" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="3" />
+        <Point X="2.25" Y="2.808" />
+        <Point X="3.5" Y="2.808" />
+        <Point X="3.5" Y="2.376" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.Employee">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAQAAAEAAAQABAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.Order">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <Members>
+      <Property Name="Customer_id" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Customer" Type="Alpha3.Customer" FixedFromPoint="true">
+      <Path>
+        <Point X="4.625" Y="3" />
+        <Point X="4.625" Y="2.377" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QQEIAAALAAAAmBAAQQAEAAAAQAAIAAAICIIEAAEAAgA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="PickUpPoint" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="orderedProducts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Alpha3.Person">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAERAAChAgAAsAAAAAAAAAAEAAAAAAQAAAAAQAgA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.Product">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABBABAAQAAgCAEAAAgAAQACCEEAEAgAQAAAAAAAwA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.Store">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAIAgAAGAAAAAAAAgAAAggAAAAIAAAAACgA=</HashCode>
+      <FileName>Store.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="WarHouse" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Alpha3.StoredItems">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAACAAAAAgAAAAEAAAABAAAA=</HashCode>
+      <FileName>StoredItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alpha3.CustomerDAO">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAIQAEAAAAAAA=</HashCode>
+      <FileName>CustomerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.EmployeeDAO">
+    <Position X="13.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>EmployeeDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.OrderDAO">
+    <Position X="15" Y="2" Width="1.5" />
+    <AssociationLine Name="CDAO" Type="Alpha3.CustomerDAO" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15" Y="3.625" />
+        <Point X="14.083" Y="3.625" Type="JumpStart" />
+        <Point X="13.917" Y="3.625" Type="JumpEnd" />
+        <Point X="12.656" Y="3.625" />
+        <Point X="12.656" Y="2.94" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.707" Y="0.404" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="SDAO" Type="Alpha3.StoreDAO" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.5" Y="3.562" />
+        <Point X="17.417" Y="3.562" Type="JumpStart" />
+        <Point X="17.583" Y="3.562" Type="JumpEnd" />
+        <Point X="18.688" Y="3.562" />
+        <Point X="18.688" Y="3.132" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.092" Y="0.187" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAEAAQAAgAAAAAAAAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>OrderDAO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="CDAO" />
+      <Field Name="PDAO" />
+      <Field Name="SDAO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alpha3.ProductDAO">
+    <Position X="16.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAQAAAIAAQAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ProductDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.StoreDAO">
+    <Position X="18.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAQAAgAAAAAAAAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>StoreDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alpha3.CustomerForm">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABEAAABAACAAAFYAAACAAIAGAAEAAAACAQAQAAEAAQA=</HashCode>
+      <FileName>CustomerForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="CDAO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alpha3.EmployeeForm">
+    <Position X="13.25" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="flowLayoutPanel1" Hidden="true" />
+      <Field Name="flowLayoutPanel2" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABgAAABAACAAAFIAAACAAIAWCIEBACUAAQAQAIFAAQA=</HashCode>
+      <FileName>EmployeeForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="EDAO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alpha3.OrderForm">
+    <Position X="15" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAEAACABACAAAFIAAACAAQACAAAAAAACBABAAAAAAAA=</HashCode>
+      <FileName>OrderForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ODAO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alpha3.ProductForm">
+    <Position X="16.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="button" Hidden="true" />
+      <Field Name="buttonok" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="flowLayoutPanel1" Hidden="true" />
+      <Field Name="flowLayoutPanel2" Hidden="true" />
+      <Field Name="icon" Hidden="true" />
+      <Field Name="iconerror" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Method Name="ProductForm" Hidden="true" />
+      <Field Name="RefreshButton" Hidden="true" />
+      <Field Name="source" Hidden="true" />
+      <Field Name="source1" Hidden="true" />
+    </Members>
+    <AssociationLine Name="PDAO" Type="Alpha3.ProductDAO">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.146" Y="0.072" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABAAAABAACQABHIACgCAAIEGkMERACAABQAQAIEAQQQ=</HashCode>
+      <FileName>ProductForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PDAO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alpha3.StoreForm">
+    <Position X="18.5" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAgCAEAFIRAACAASACAAAAAAAABIAAAQAAABA=</HashCode>
+      <FileName>StoreForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="SDAO" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
