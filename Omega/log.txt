@@ -1,0 +1,29 @@
+24/03/2023 11:39:58 - vinarsky - logout
+24/03/2023 11:40:02 - test - login
+24/03/2023 12:32:06 - vinarsky - login
+24/03/2023 12:32:31 - vinarsky - Added user: 
+24/03/2023 12:33:32 - vinarsky - logout
+24/03/2023 12:33:36 - vinarsky - login
+24/03/2023 12:34:26 - vinarsky - login
+24/03/2023 12:34:37 - vinarsky - deleted user: 
+24/03/2023 12:38:07 - vinarsky - Added user: testtest
+24/03/2023 12:38:18 - vinarsky - deleted user: testtest
+24/03/2023 12:52:16 - vinarsky - login
+24/03/2023 13:46:42 - vinarsky - login
+24/03/2023 13:47:24 - vinarsky - login
+24/03/2023 13:50:11 - vinarsky - login
+24/03/2023 13:51:14 - vinarsky - login
+24/03/2023 13:51:35 - vinarsky - deleted user: testtest
+24/03/2023 13:51:49 - vinarsky - login
+24/03/2023 13:54:51 - vinarsky - login
+24/03/2023 13:54:57 - vinarsky - deleted user: test2
+24/03/2023 13:55:50 - vinarsky - Added user: test2
+24/03/2023 13:56:31 - vinarsky - login
+24/03/2023 13:56:45 - vinarsky - logout
+24/03/2023 13:56:53 - test2 - login
+24/03/2023 13:57:00 - test2 - logout
+24/03/2023 13:57:07 - vinarsky - login
+24/03/2023 13:57:10 - vinarsky - deleted user: test2
+24/03/2023 13:57:20 - vinarsky - login
+24/03/2023 14:10:29 - vinarsky - login
+25/03/2023 11:15:23 - vinarsky - login
