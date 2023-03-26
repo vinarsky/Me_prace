@@ -1,0 +1,6 @@
+Databáze je uložena na školním MSSQL servru
+Authentication: SQL Server Authentication
+host: 193.85.203.188
+uzivatel: vinarsky
+heslo: 
+databáze: vinarsky

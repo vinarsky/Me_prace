@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Objednane produkty Objednavka FK" directorySegmentName="seg_0" id="A2EB7820-6B88-B54C-9709-32038A14981C">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 13:13:26 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<engineerTo>
+<item key="2A30225E-B27D-469E-7913-D94947ADA0C9" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5B64F190-C067-9EBF-8757-F463C5570CC2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D7B98CAF-D064-B6C7-DC38-CCE42647AEC0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

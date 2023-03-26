@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9387520D-1A32-1992-2CB5-6E02C744E71E" name="Kategorie">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>E00E32FE-1487-5100-26F7-4762310A2E20</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nazev" id="C8FFC863-65F2-8D11-063A-D9D9F76F06FE">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<generatorID>7F0C5022-7FDA-82D8-CED0-6A6555D2D10B</generatorID>
+<ownerDesignName>datamodelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kategorie_ID" id="77B5C1DC-C856-5EA4-BDC0-331A2A7974A2">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6799A5AD-E7DC-1C06-D208-ADB7AB6D35C9" name="Kategorie_PK">
+<createdBy>radek</createdBy>
+<createdTime>2022-12-26 14:53:12 UTC</createdTime>
+<ownerDesignName>datamodelar</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="77B5C1DC-C856-5EA4-BDC0-331A2A7974A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
