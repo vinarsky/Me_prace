@@ -33,7 +33,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAECAEBAAAIAAAAAAhAAAIAwAAAAQQAQCAAAAkAAAgI=</HashCode>
+      <HashCode>AAECAEBAAAIAAAAEAhAAAIAwAAAAQQAQCAAAAkAAAgI=</HashCode>
       <FileName>Reservation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -62,21 +62,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Omega.RoomDAO">
-    <Position X="18.5" Y="3" Width="1.5" />
+    <Position X="16.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>DAOs\RoomDAO.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Omega.VisitorDAO">
-    <Position X="20.25" Y="3" Width="1.5" />
+    <Position X="16.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAEAAAAAAAA=</HashCode>
       <FileName>DAOs\VisitorDAO.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Omega.UserDAO">
-    <Position X="22" Y="3" Width="1.5" />
+    <Position X="16.75" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAEAAAA=</HashCode>
       <FileName>DAOs\UserDAO.cs</FileName>
@@ -128,7 +128,7 @@
   <Class Name="Omega.OverviewPage" Collapsed="true">
     <Position X="12.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAACAAAACAAAFAAJkCAAQACAAAIIAAAgABAgAAAAAA=</HashCode>
+      <HashCode>AAAACAAAACAAAFAAJkCAAQACAAAIIAAAiABAgAAAAAA=</HashCode>
       <FileName>Forms\OverviewPage.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -143,7 +143,7 @@
     </TypeIdentifier>
   </Class>
   <Enum Name="Omega.Access">
-    <Position X="10.5" Y="1.75" Width="1.5" />
+    <Position X="10.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAACgAAAAAAAAA=</HashCode>
       <FileName>User.cs</FileName>
