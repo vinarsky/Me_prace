@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Omega.Person" Collapsed="true">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAChAgAAsAIAAAAAAAAEAAAACIAAAAAAAAgA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.User" Collapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAEAAQAAAAEAAAQEAAAEAAwAAAAACAAABAgIAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.Visitor" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.Reservation">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Visitors" Type="Omega.Visitor" FixedToPoint="true">
+      <Path>
+        <Point X="6.375" Y="5.75" />
+        <Point X="6.375" Y="4.441" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAECAEBAAAIAAAAAAhAAAIAwAAAAQQAQCAAAAkAAAgI=</HashCode>
+      <FileName>Reservation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="room" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Visitors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Omega.Room">
+    <Position X="8.25" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAACEEAAAABgEAACIAAAQAgCBCgAAAQAIEAAAAkA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.DAOs.ReservationDAO">
+    <Position X="16.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAOs\ReservationDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.RoomDAO">
+    <Position X="18.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DAOs\RoomDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.VisitorDAO">
+    <Position X="20.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAEAAAAAAAA=</HashCode>
+      <FileName>DAOs\VisitorDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.UserDAO">
+    <Position X="22" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAEAAAA=</HashCode>
+      <FileName>DAOs\UserDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Omega.VisitorForm" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Visitors" Type="Omega.Visitor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.75" Y="6.846" />
+        <Point X="12.375" Y="6.846" />
+        <Point X="12.375" Y="4.816" />
+        <Point X="7.375" Y="4.816" />
+        <Point X="7.375" Y="4.441" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAGAAAFJAAgCAAIAGAMEDACQAAAAQAIBAAIA=</HashCode>
+      <FileName>Forms\VisitorPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Visitors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Omega.EmployeeForm" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAACgAAGAAAFJBBACAEIAGAIEDACUEAACAIIBAAIA=</HashCode>
+      <FileName>Forms\EmployeeForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Users" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Omega.RoomPage" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEAAEQCAAAFogAgKACQgCKhgJAACAAAAAAQECAAA=</HashCode>
+      <FileName>Forms\RoomPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Rooms" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Omega.OverviewPage" Collapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAFAAJkCAAQACAAAIIAAAgABAgAAAAAA=</HashCode>
+      <FileName>Forms\OverviewPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="CurrentReservations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Omega.NewReservationForm" Collapsed="true">
+    <Position X="12.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAACAAACBCABQAAWCAKBAiAhAAIBMCBAAAAACEAAA=</HashCode>
+      <FileName>Forms\NewReservationPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Omega.Access">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAACgAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -43,12 +43,15 @@ namespace Omega
         public string Password
         {
             get { return password; }
-            set 
+            set
             {
-                if (value.Length < 4 || Regex.IsMatch(value, @"^[^'].*'.*$"))
+                if (value.Length < 4 || value.Contains("'"))
+                {
                     MessageBox.Show("špatné heslo!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                else
-                    password = value;
+                    password = null;
+                }                                 
+                else                
+                    password = value;                
             }
         }
 
@@ -74,6 +77,11 @@ namespace Omega
 
         public User() : base() { }
 
+        /// <summary>
+        /// encodes password using sha512
+        /// </summary>
+        /// <param name="password">string to encode</param>
+        /// <returns>encoded string</returns>
         public string EncodePassword(string password)
         {
             byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
@@ -86,7 +94,9 @@ namespace Omega
             }
             return sb.ToString();
         }
-
+        /// <summary>
+        /// updates username in database
+        /// </summary>
         public void UpdateUsername()
         {
             MySqlConnection conn = DataBaseConnection.GetConnection();
@@ -97,6 +107,9 @@ namespace Omega
                 command.ExecuteNonQuery();
             }
         }
+        /// <summary>
+        /// updates password in database
+        /// </summary>
         public void UpdatePassword()
         {
             MySqlConnection conn = DataBaseConnection.GetConnection();
@@ -107,7 +120,24 @@ namespace Omega
                 command.ExecuteNonQuery();
             }
         }
-
+        /// <summary>
+        /// updates role in database
+        /// </summary>
+        public void UpdateRole()
+        {
+            MySqlConnection conn = DataBaseConnection.GetConnection();
+            using (MySqlCommand command = new MySqlCommand("update employee set role_id = (select id from roles where name = @name) where id = @id;", conn))
+            {
+                command.Parameters.Add(new MySqlParameter("@id", this.ID));
+                command.Parameters.Add(new MySqlParameter("@name", this.Access.ToString()));
+                command.ExecuteNonQuery();
+            }
+        }
+        /// <summary>
+        /// inserts employee in to database 
+        /// </summary>
+        /// <param name="role_id">id of role</param>
+        /// <returns>true if insert is succesful, othervise false</returns>
         public bool Insert(int role_id)
         {
             try

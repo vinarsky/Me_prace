@@ -64,6 +64,7 @@ namespace Omega
             this.dataGridView.TabIndex = 15;
             this.dataGridView.Tag = "";
             this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellEndEdit);
+            this.dataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridView_DataError);
             // 
             // flowLayoutPanel1
             // 

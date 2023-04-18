@@ -8,12 +8,14 @@ using System.Windows.Forms;
 
 namespace Omega
 {
-    class Visitor : Person
+    public class Visitor : Person
     {
         public Visitor(int id) : base(id)
         {
             this.id = id;
         }
+
+        public Visitor() { }
 
         public bool Insert()
         {
@@ -28,13 +30,13 @@ namespace Omega
                     command.Parameters.Add(new MySqlParameter("@tel", this.Tel));
                     command.ExecuteNonQuery();
                 }
+                return true;
             }
             catch (MySqlException)
             {
                 MessageBox.Show("Error while inserting visitor info!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
-            }
-            return true;
+            }            
         }
     }
 }

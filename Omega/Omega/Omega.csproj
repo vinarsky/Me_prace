@@ -84,78 +84,80 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAOs\ReservationDAO.cs" />
     <Compile Include="DataBaseConnection.cs" />
-    <Compile Include="EmployeeForm.cs">
+    <Compile Include="Forms\EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeForm.Designer.cs">
+    <Compile Include="Forms\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Log.cs" />
-    <Compile Include="LoginPage.cs">
+    <Compile Include="vendor\Log.cs" />
+    <Compile Include="Forms\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginPage.Designer.cs">
+    <Compile Include="Forms\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.cs">
+    <Compile Include="Forms\MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainPage.Designer.cs">
+    <Compile Include="Forms\MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewReservationForm.cs">
+    <Compile Include="Forms\NewReservationPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewReservationForm.Designer.cs">
-      <DependentUpon>NewReservationForm.cs</DependentUpon>
+    <Compile Include="Forms\NewReservationPage.Designer.cs">
+      <DependentUpon>NewReservationPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="OverviewPage.cs">
+    <Compile Include="Forms\OverviewPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OverviewPage.Designer.cs">
+    <Compile Include="Forms\OverviewPage.Designer.cs">
       <DependentUpon>OverviewPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs" />
     <Compile Include="Room.cs" />
-    <Compile Include="RoomDAO.cs" />
-    <Compile Include="RoomPage.cs">
+    <Compile Include="DAOs\RoomDAO.cs" />
+    <Compile Include="Forms\RoomPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomPage.Designer.cs">
+    <Compile Include="Forms\RoomPage.Designer.cs">
       <DependentUpon>RoomPage.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <Compile Include="UserDAO.cs" />
-    <Compile Include="UserPage.cs">
+    <Compile Include="DAOs\UserDAO.cs" />
+    <Compile Include="Forms\UserPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserPage.Designer.cs">
+    <Compile Include="Forms\UserPage.Designer.cs">
       <DependentUpon>UserPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Visitor.cs" />
-    <Compile Include="VisitorDAO.cs" />
-    <Compile Include="VisitorForm.cs">
+    <Compile Include="DAOs\VisitorDAO.cs" />
+    <Compile Include="Forms\VisitorPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisitorForm.Designer.cs">
-      <DependentUpon>VisitorForm.cs</DependentUpon>
+    <Compile Include="Forms\VisitorPage.Designer.cs">
+      <DependentUpon>VisitorPage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="EmployeeForm.resx">
+    <EmbeddedResource Include="Forms\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginPage.resx">
+    <EmbeddedResource Include="Forms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainPage.resx">
+    <EmbeddedResource Include="Forms\MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewReservationForm.resx">
-      <DependentUpon>NewReservationForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\NewReservationPage.resx">
+      <DependentUpon>NewReservationPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OverviewPage.resx">
+    <EmbeddedResource Include="Forms\OverviewPage.resx">
       <DependentUpon>OverviewPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -167,15 +169,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RoomPage.resx">
+    <EmbeddedResource Include="Forms\RoomPage.resx">
       <DependentUpon>RoomPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserPage.resx">
+    <EmbeddedResource Include="Forms\UserPage.resx">
       <DependentUpon>UserPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VisitorForm.resx">
-      <DependentUpon>VisitorForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\VisitorPage.resx">
+      <DependentUpon>VisitorPage.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

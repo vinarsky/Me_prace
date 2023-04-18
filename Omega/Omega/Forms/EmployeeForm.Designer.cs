@@ -48,6 +48,7 @@ namespace Omega
             this.AddButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.ChangeRole = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -216,7 +217,7 @@ namespace Omega
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(505, 13);
+            this.AddButton.Location = new System.Drawing.Point(505, 8);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(75, 23);
             this.AddButton.TabIndex = 12;
@@ -226,7 +227,7 @@ namespace Omega
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(505, 42);
+            this.DeleteButton.Location = new System.Drawing.Point(505, 37);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 11;
@@ -249,19 +250,30 @@ namespace Omega
             this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellEndEdit);
             this.dataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridView_DataError_1);
             // 
+            // ChangeRole
+            // 
+            this.ChangeRole.Location = new System.Drawing.Point(505, 66);
+            this.ChangeRole.Name = "ChangeRole";
+            this.ChangeRole.Size = new System.Drawing.Size(75, 23);
+            this.ChangeRole.TabIndex = 15;
+            this.ChangeRole.Text = "Upravit roli";
+            this.ChangeRole.UseVisualStyleBackColor = true;
+            this.ChangeRole.Click += new System.EventHandler(this.ChangeRole_Click);
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(706, 450);
+            this.Controls.Add(this.ChangeRole);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.AddButton);
             this.Name = "EmployeeForm";
             this.Tag = "Zaměstnanci";
-            this.Text = "EmployeeForm";
+            this.Text = "c";
             this.Load += new System.EventHandler(this.EmployeeForm_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -296,5 +308,6 @@ namespace Omega
         private System.Windows.Forms.ListBox RolesBox;
         private System.Windows.Forms.NumericUpDown TelnumBox;
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Button ChangeRole;
     }
 }

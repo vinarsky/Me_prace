@@ -13,13 +13,13 @@ namespace Omega
 {
     public partial class MainPage : Form
     {
-        //aktualne prihlaseny uzivatel
+        //currently loged user 
         public static User CurrentUser = null;
 
-        //aktualne zobrazeny form
+        //currently viewed form
         Form CurrentForm = null;
 
-        //Formulare 
+        //forms
         RoomPage Room = new RoomPage();
         OverviewPage Overview = new OverviewPage();
         UserPage User = new UserPage();
@@ -27,42 +27,41 @@ namespace Omega
         VisitorForm Visitor = new VisitorForm();
         NewReservationForm NewReservation = new NewReservationForm();
 
-        //Construktor
         public MainPage()
         {
             InitializeComponent();
         }
 
         /// <summary>
-        /// Tento even nastane kdyz se form nacte. Otevre se form overview
+        /// event occuers on first form load, showed the overview form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void MainPage_Load(object sender, EventArgs e)
         {
-            OpenSection(Overview);            
+            OpenSection(Overview);
+            VisitorForm.Visitors = new VisitorDAO().GetAllVisitors();
         }
 
         /// <summary>
-        /// Metoda otevira Formy. Nastavi ho jako child panelu MainContent. Nastavi nadpis podle tagu formu
+        /// method opens forms in the left panel
         /// </summary>
-        /// <param name="Form">Formular ktery se ma otevrit</param>
+        /// <param name="Form">form to open</param>
         public void OpenSection(Form Form)
         {
             if (CurrentForm != null)            
                 CurrentForm.Hide();
            
             CurrentForm = Form;
-            Form.TopLevel = false;
-            Form.FormBorderStyle = FormBorderStyle.None;
-            Form.Dock = DockStyle.Fill;
-            this.MainContent.Controls.Add(Form);
-            this.MainContent.Tag = Form;
+            Form.TopLevel = false;//form will be on the same level as mainpage
+            Form.FormBorderStyle = FormBorderStyle.None;//hides border of form
+            Form.Dock = DockStyle.Fill;//streches the form across the whole panel
+            MainContent.Controls.Add(Form);//makes the form visible as a part of the panel
             Form.Show();
             Header.Text = Form.Tag.ToString();
         }
 
-        //Nasledujci metody jsou eventy, ktere se spusti pri kliknuti na nejaky button z menu. Oteviraji se jimi jednotlive sekce
+        //following button click events open certain from, each one is opening one form
 
         private void UserButton_Click(object sender, EventArgs e)
         {
@@ -96,8 +95,8 @@ namespace Omega
         }
 
         /// <summary>
-        /// Event ktery nastane po kliknuti na tlacitko 'Vypnout'. Nejdrive je uzivatel tazan, zda opravdu chce aplikaci vypnout.
-        /// Pokud ne, metoda skonci. Pokud ano, aplikace se vypne.
+        /// An event that occurs after clicking the 'Vypnout' button. First, the user is asked if they really want to turn off the application.
+        /// If not, the method ends. If yes, the application is turned off.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -105,12 +104,15 @@ namespace Omega
         {
             DialogResult result = MessageBox.Show("Vypnout aplikaci?", "Shutdown", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
+            {
                 Application.Exit();
+                DataBaseConnection.Commit();
+            }            
         }
 
         /// <summary>
-        /// Event ktery nastane po kliknuti na tlacitko 'Odhlasit se'. Nejdrive je uzivatel tazan, zda se opravdu, chce odhlasit.
-        /// Pokud ne, metoda skonci. Pokud ano, schova se hlavni menu, otevre se login stranka, zapise se do logu a Currentuser se nastavi na null
+        /// An event that occurs after clicking the 'Odhlásit se' button. First, the user is asked if they really want to log out.
+        /// If not, the method ends. If yes, the main menu is hidden, the login page is opened, it is written to the log, and the Currentuser is set to null.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -123,6 +125,7 @@ namespace Omega
             new LoginPage().Show();
             new Log("logout", MainPage.CurrentUser.Username);
             CurrentUser = null;
+            DataBaseConnection.Commit();
         }
     }
 }

@@ -16,7 +16,11 @@ namespace Omega
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// occurs on first form load, filles in the users atributes to the texboxes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserPage_Load(object sender, EventArgs e)
         {
             TelnumBox.Maximum = 999999999;
@@ -29,7 +33,11 @@ namespace Omega
             EmailBox.Text = MainPage.CurrentUser.Email;
             TelnumBox.Text = MainPage.CurrentUser.Tel.ToString();
         }
-
+        /// <summary>
+        /// if current value doesnt match with the value in the textbox, the value will be updated in database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CommitChanges_Click(object sender, EventArgs e)
         {
             if (FirstnameBox.Text != MainPage.CurrentUser.Firstname)
@@ -69,7 +77,9 @@ namespace Omega
             }
             UserName.Text = MainPage.CurrentUser.ToString().ToUpper();
         }
-
+        /// <summary>
+        /// updates the name in heading
+        /// </summary>
         public void UpdateUserName()
         {
             UserName.Text = MainPage.CurrentUser.ToString().ToUpper();

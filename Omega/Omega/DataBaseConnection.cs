@@ -30,6 +30,8 @@ namespace Omega
 				try
 				{
 					conn.Open();
+					MySqlCommand command = new MySqlCommand("START TRANSACTION;", conn);
+					command.ExecuteNonQuery();
 				}
 				catch (SqlException)
 				{
@@ -44,6 +46,12 @@ namespace Omega
 			var appSettings = ConfigurationManager.AppSettings;
 			string result = appSettings[key] ?? "Not Found";
 			return result;
+		}
+
+		public static void Commit()
+		{
+			MySqlCommand command = new MySqlCommand("COMMIT;", conn);
+			command.ExecuteNonQuery();
 		}
 	}
 }

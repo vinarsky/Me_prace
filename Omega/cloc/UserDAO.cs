@@ -52,7 +52,7 @@ namespace Omega
                 MessageBox.Show("Error while getting employee info!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return User;
-        }
+        }        
 
         public List<User> GetAllUsers()
         {

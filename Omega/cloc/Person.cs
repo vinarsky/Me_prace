@@ -86,6 +86,11 @@ namespace Omega
             return Firstname + " " + Lastname;
         }
 
+        /// <summary>
+        /// Updates person. Based on column parameter calls other methods that update the column in database.
+        /// Also gets the type of object that called this method and other update methods are called with the specific table.
+        /// </summary>
+        /// <param name="Column">Column to update in datebase</param>
         public void Update(string Column)
         {
             string table = null;
@@ -115,6 +120,10 @@ namespace Omega
             }
         }
 
+        /// <summary>
+        /// updates firstname colomn in database.
+        /// </summary>
+        /// <param name="table">name of the table to update</param>
         public void UpdateFirstname(string table)
         {
             MySqlConnection conn = DataBaseConnection.GetConnection();
@@ -125,7 +134,10 @@ namespace Omega
                 command.ExecuteNonQuery();
             }
         }
-
+        /// <summary>
+        /// updates lastname colomn in database.
+        /// </summary>
+        /// <param name="table">name of the table to update</param>
         public void UpdateLastname(string table)
         {
             MySqlConnection conn = DataBaseConnection.GetConnection();
@@ -137,6 +149,10 @@ namespace Omega
             }
         }
 
+        /// <summary>
+        /// updates tel colomn in database.
+        /// </summary>
+        /// <param name="table">name of the table to update</param>
         public void UpdateTel(string table)
         {
             MySqlConnection conn = DataBaseConnection.GetConnection();
@@ -148,6 +164,10 @@ namespace Omega
             }
         }
 
+        /// <summary>
+        /// updates email colomn in database.
+        /// </summary>
+        /// <param name="table">name of the table to update</param>
         public void UpdateEmail(string table)
         {
             MySqlConnection conn = DataBaseConnection.GetConnection();
@@ -159,6 +179,10 @@ namespace Omega
             }
         }
 
+        /// <summary>
+        /// delets from database visitor or employee the calls this method
+        /// </summary>
+        /// <returns></returns>
         public bool Delete()
         {
             try

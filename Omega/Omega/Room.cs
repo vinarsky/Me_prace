@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,13 +15,16 @@ namespace Omega
         private string room_status;
         private double price_for_night;
         private int floor;
-        private string view_id;
+        private string view;
         private bool Balcony;
         private bool AC_unit;
 
+        public Dictionary<string, int> Beds = new Dictionary<string, int>();        
+
         public int Id 
-        { 
-            get => id; set => id = value; 
+        {
+            get { return id; }
+            set { id = value; }
         }
         public string RoomType 
         {
@@ -47,10 +51,10 @@ namespace Omega
             get { return floor; }
             set { floor = value; }
         }
-        public string ViewId
+        public string View
         {
-            get { return view_id; }
-            set { view_id = value; }
+            get { return view; }
+            set { view = value; }
         }
         public bool balcony 
         {
@@ -63,14 +67,14 @@ namespace Omega
             set { AC_unit = value; }
         }
 
-        public Room(int id, string room_type, int max_people, string room_status, double price, int floor, string view_id, bool balcony, bool aC_unit)
+        public Room(int id, string room_type, int max_people, string room_status, double price, int floor, string view, bool balcony, bool aC_unit)
         {
             this.Id = id;
             this.RoomType = room_type;
             this.MaxPeople = max_people;
             this.RoomStatus = room_status;
             this.Floor = floor;
-            this.ViewId = view_id;
+            this.View = view;
             this.balcony = balcony;
             this.AcUnit = aC_unit;
             this.PriceForNight = price;
@@ -78,11 +82,17 @@ namespace Omega
 
         public override string ToString()
         {
-            return id.ToString();
+            return "ID: " + id + ", " + room_type + " " + floor;
         }
-        public void Update()
+        public void UpdateStatus()
         {
-
+            MySqlConnection conn = DataBaseConnection.GetConnection();
+            using (MySqlCommand command = new MySqlCommand("update Room set room_status_id = (select id from Room_status where name = @name) where id = @id;", conn))
+            {
+                command.Parameters.Add(new MySqlParameter("@id", this.Id));
+                command.Parameters.Add(new MySqlParameter("@name", this.RoomStatus));
+                command.ExecuteNonQuery();
+            }
         }
     }
 }
