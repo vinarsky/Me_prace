@@ -1,0 +1,6 @@
+C:\Users\radek\source\repos\Mail_Bomber\TestProject\obj\Debug\net48\TestProject.csproj.AssemblyReference.cache
+C:\Users\radek\source\repos\Mail_Bomber\TestProject\obj\Debug\net48\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\radek\source\repos\Mail_Bomber\TestProject\obj\Debug\net48\TestProject.AssemblyInfoInputs.cache
+C:\Users\radek\source\repos\Mail_Bomber\TestProject\obj\Debug\net48\TestProject.AssemblyInfo.cs
+C:\Users\radek\source\repos\Mail_Bomber\TestProject\obj\Debug\net48\TestProject.csproj.CoreCompileInputs.cache
+C:\Users\radek\source\repos\Mail_Bomber\TestProject\obj\Debug\net48\TestProject.sourcelink.json
