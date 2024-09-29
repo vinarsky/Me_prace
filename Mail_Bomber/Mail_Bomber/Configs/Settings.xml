@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="webIP" value="http://35.204.70.258/" />
+    <add key="smtpServer" value="smtp.seznam.cz" />
+    <add key="smtpPort" value="587" />
+    <add key="smtpUser" value="Mail_Bomber@seznam.cz" />
+    <add key="smtpPass" value="Bomber202" />
+    <add key="SenderMail" value="Mail_Bomber@seznam.cz" />
+    <add key="RecieverMail" value="radek.vinarsky@post.cz" />
+    <add key="Interval" value="10-12" />
+    <add key="ChangesIntensity" value="0" />
+  </appSettings>
+</configuration>

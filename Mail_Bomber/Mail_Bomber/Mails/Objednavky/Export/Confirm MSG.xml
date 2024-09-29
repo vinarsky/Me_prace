@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Order>
+	<OrderNumber>1234</OrderNumber>
+	<ShipName>Titanic</ShipName>
+	<Port>New York</Port>
+	<LoadingDate>2024-01-01</LoadingDate>
+	<UnloadingDate>2024-01-10</UnloadingDate>
+	<Weight>10000</Weight>
+</Order>

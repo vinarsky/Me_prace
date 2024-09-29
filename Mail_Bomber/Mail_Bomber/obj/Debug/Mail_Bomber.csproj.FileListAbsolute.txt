@@ -1,0 +1,17 @@
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\Mail_Bomber.exe.config
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\Mail_Bomber.exe
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\Mail_Bomber.pdb
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\itextsharp.dll
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\itextsharp.xml
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bomber.csproj.AssemblyReference.cache
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bomber.MainMenu.resources
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bomber.Properties.Resources.resources
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bomber.csproj.GenerateResource.cache
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bomber.csproj.CoreCompileInputs.cache
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bom.308322DC.Up2Date
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bomber.exe
+C:\Users\radek\source\repos\Mail_Bomber\Mail_Bomber\obj\Debug\Mail_Bomber.pdb

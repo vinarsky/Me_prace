@@ -1,0 +1,1 @@
+This is test file that is used as an attachment of mails.
